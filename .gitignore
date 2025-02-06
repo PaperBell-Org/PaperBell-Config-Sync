@@ -18,6 +18,12 @@ Persons/**/*
 
 # JSON 配置文件
 longform-sessions.json
+# 图谱文件
+.obsidian/graph.json
+# 快捷键
+.obsidian/hotkeys.json
+# 类别
+.obsidian/types.json
 
 # 只保留需要共享的文件夹
 !**/00*.md
