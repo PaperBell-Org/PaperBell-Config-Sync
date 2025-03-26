@@ -105,7 +105,6 @@
   "floating-toc-styles@@toggle-floating-toc-header-color": false,
   "floating-toc-styles@@enable-heading-nowrap": true,
   "floating-toc-styles@@enable-outline-style": "default-outline-style",
-  "floating-toc-styles@@enable-bar-icon": false,
   "floating-toc-styles@@floating-toc-line-color@@light": "#569FE8",
   "floating-toc-styles@@floating-toc-line-color@@dark": "#4792DD",
   "floating-toc-styles@@floating-toc-font-color@@light": "#FFFFFF",

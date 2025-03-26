@@ -29,8 +29,8 @@ filters:
   - ${USERDATA}/filters/div.lua
   - ${USERDATA}/filters/preamble.lua
   - ${USERDATA}/filters/highlight.lua
-  - pandoc-crossref
-  - citeproc
+  # - pandoc-crossref  #! 交叉引用, 需要安装 pandoc-crossref
+  # - citeproc
 
 metadata:
   CJKmainfont: Songti SC

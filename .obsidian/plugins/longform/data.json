@@ -1,7 +1,7 @@
 {
   "version": 3,
   "projects": {},
-  "selectedDraftVaultPath": "Outputs/PaperBell用户文档/index.md",
+  "selectedDraftVaultPath": "Outputs/demo/Index.md",
   "userScriptFolder": "40 - Obsidian/脚本/longform",
   "sessionStorage": "file",
   "sessions": [],
@@ -15,6 +15,9 @@
   "sessionFile": "longform-sessions.json",
   "numberScenes": true,
   "sceneTemplate": "40 - Obsidian/模板/学术长文本模板 Longform academic template.md",
+  "waitForSync": false,
+  "fallbackWaitEnabled": true,
+  "fallbackWaitTime": 5,
   "workflows": {
     "CompileWithTitledFormatters": {
       "name": "CompileWithTitledFormatters",
@@ -51,14 +54,14 @@
         {
           "id": "40 - Obsidian/脚本/longform/编译后增加头文件.js",
           "optionValues": {
-            "title": "PaperBell用户手册",
-            "author-name": "Shuang Song"
+            "title": "论文题目",
+            "author-name": "用户作者"
           }
         },
         {
           "id": "write-to-note",
           "optionValues": {
-            "target": "PaperBell用户手册",
+            "target": "一篇论文",
             "open-after": true
           }
         }
