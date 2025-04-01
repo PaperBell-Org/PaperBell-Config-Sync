@@ -27,3 +27,9 @@ longform-sessions.json
 
 # 只保留需要共享的文件夹
 !**/00*.md
+
+# 更新备份
+.update_backup
+
+# 插件
+.obsidian/plugins/obsidian42-brat

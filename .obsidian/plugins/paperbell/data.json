@@ -4,5 +4,21 @@
   "institutionNoteTemplate": "40 - Obsidian/模板/机构模板pro",
   "autoGenerateInstitutionNotes": true,
   "openInstitutionAfterCreation": true,
-  "listenToFileCreatedInPath": "Persons/Scholars"
+  "listenToFileCreatedInPath": "Persons/Scholars",
+  "enableUpdater": false,
+  "updater": {
+    "repository": "PaperBell-Org/Obsidian-PaperBell",
+    "excludePatterns": [
+      "**/*.js"
+    ],
+    "autoUpdate": false,
+    "minAppVersion": "4.0.2",
+    "customReplacements": {},
+    "obsidianConflictHandling": {
+      "settings": "prompt",
+      "themes": "prompt",
+      "snippets": "prompt",
+      "plugins": "prompt"
+    }
+  }
 }
