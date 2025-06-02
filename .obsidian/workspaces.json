@@ -555,6 +555,21 @@
                   "icon": "longform",
                   "title": "Longform"
                 }
+              },
+              {
+                "id": "5ee6d50790915b94",
+                "type": "leaf",
+                "state": {
+                  "type": "zotero-annotation-view",
+                  "state": {
+                    "file": "40 - Obsidian/主页/00. 主页.md",
+                    "itemId": -1,
+                    "attachmentId": -1,
+                    "follow": "zt-reader"
+                  },
+                  "icon": "highlighter",
+                  "title": "Zotero Annotations"
+                }
               }
             ]
           }
@@ -564,7 +579,7 @@
       },
       "left-ribbon": {
         "hiddenItems": {
-          "paperbell:Search Institution": false,
+          "paperbell:Search institution": false,
           "obsidian-projects:打开项目": false,
           "daily-notes:打开/创建今天的日记": false,
           "homepage:Open homepage": false,
@@ -580,8 +595,8 @@
           "workspaces:管理工作区布局": false
         }
       },
-      "active": "67446afeb3cb2fc1",
-      "mtime": "2025-02-04T14:35:50+08:00"
+      "active": "09485baf3a99e2db",
+      "mtime": "2025-05-29T15:23:16+02:00"
     }
   },
   "active": "主工作区"

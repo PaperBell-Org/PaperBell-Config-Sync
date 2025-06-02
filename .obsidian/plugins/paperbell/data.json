@@ -20,5 +20,40 @@
       "snippets": "prompt",
       "plugins": "prompt"
     }
+  },
+  "ZotLitColors": {
+    "enabled": true,
+    "mapping": {
+      "yellow": {
+        "color": "#ffd400",
+        "label": "Highlight",
+        "callout": "Highlight"
+      },
+      "blue": {
+        "color": "#2ea8e5",
+        "label": "Definition",
+        "callout": "Definition"
+      },
+      "red": {
+        "color": "#ff6666",
+        "label": "Testing",
+        "callout": "Conclusion"
+      },
+      "green": {
+        "color": "#5fb236",
+        "label": "Quote",
+        "callout": "tip"
+      },
+      "orange": {
+        "color": "#f19837",
+        "label": "Keyword",
+        "callout": "Definition"
+      },
+      "purple": {
+        "color": "#e56eee",
+        "label": "Question",
+        "callout": "Question"
+      }
+    }
   }
 }
