@@ -27,6 +27,7 @@ longform-sessions.json
 
 # 只保留需要共享的文件夹
 !**/00*.md
+!**/00*.base
 
 # 更新备份
 .update_backup
