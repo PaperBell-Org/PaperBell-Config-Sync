@@ -1,0 +1,94 @@
+filters:
+  and:
+    - file.path.startsWith("Projects/")
+    - '!file.name.startsWith("00.")'
+formulas:
+  进度: |
+    if(end, "已完成",
+      if(status == "进行中", "进行中", status))
+  官网: link(url, "🌐")
+  代码库: link(github, "💻")
+  文档: link(docs, "📖")
+  资金数量: |
+    if(funds, length(funds), 0)
+views:
+  - type: table
+    name: 项目概览
+    groupBy: status
+    order:
+      - start DESC
+      - file.basename
+      - formula.官网
+      - formula.进度
+    columns:
+      - file.name
+      - project
+      - long_name
+      - start
+      - end
+      - status
+      - formula.资金数量
+      - formula.官网
+  - type: table
+    name: 详细列表
+    order:
+      - status
+      - start DESC
+    columns:
+      - file.name
+      - project
+      - long_name
+      - status
+      - start
+      - end
+      - duty
+      - formula.资金数量
+      - formula.官网
+    columnSize:
+      file.name: 150
+      project: 100
+      long_name: 200
+      status: 80
+  - type: cards
+    name: 进行中
+    filters:
+      and:
+        - status == "进行中"
+    order:
+      - start DESC
+    cardSize: 200
+    subtitle: |
+      {{project}}
+      开始于 {{start}}
+  - type: table
+    name: 已完成
+    filters:
+      and:
+        - status == "已完成"
+    order:
+      - end DESC
+    columns:
+      - file.name
+      - project
+      - long_name
+      - start
+      - end
+  - type: table
+    name: 项目产出
+    filters:
+      and:
+        - file.path.startsWith("Outputs/")
+        - file.name == "Index.md"
+    order:
+      - file.project
+      - file.mtime DESC
+    columns:
+      - file.name
+      - file.project
+      - file.frontmatter.title
+      - file.frontmatter.status
+      - file.frontmatter.target
+    columnSize:
+      file.name: 150
+      file.project: 100
+      file.frontmatter.title: 300
