@@ -1,6 +1,48 @@
+filters:
+  and:
+    - file.tags.contains("project/" + this.file.basename)
 views:
   - type: table
     name: 表格
-    filters:
-      and:
-        - file.tags.contains("project/PaperBell")
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: task-genius-tags
+    name: 任务
+    viewMode: tags
+    taskContent: file.basename
+    taskStatus: note.status
+    taskPriority: note.priority
+    taskProject: note.project
+    taskTags: note.tags
+    taskDueDate: note.dueDate
+    taskStartDate: note.startDate
+    taskCompletedDate: note.completionDate
+    taskContext: note.context
+    hideWeekends: false
+  - type: cards
+    name: 卡片
+  - type: task-genius-calendar
+    name: 视图
+    viewMode: calendar
+    taskContent: file.basename
+    taskStatus: note.status
+    taskPriority: note.priority
+    taskProject: note.project
+    taskTags: note.tags
+    taskDueDate: note.dueDate
+    taskStartDate: note.startDate
+    taskCompletedDate: note.completionDate
+    taskContext: note.context
+  - type: task-genius-kanban
+    name: kanban
+    viewMode: kanban
+    taskContent: file.basename
+    taskStatus: note.status
+    taskPriority: note.priority
+    taskProject: note.project
+    taskTags: note.tags
+    taskDueDate: note.dueDate
+    taskStartDate: note.startDate
+    taskCompletedDate: note.completionDate
+    taskContext: note.context

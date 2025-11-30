@@ -1,0 +1,30 @@
+/* 
+  Wide Mode Snippet
+  Add "cssclasses: wide-page" to your frontmatter to use this.
+*/
+
+.wide-page {
+  /* Standard Obsidian variables */
+  --file-line-width: 95%;
+  --line-width: 95%;
+  
+  /* AnuPpuccin / Minimal / Other theme variables */
+  --max-width: 95%;
+  --container-width: 95%;
+}
+
+/* Fallback for themes that don't use variables for width */
+.wide-page .markdown-preview-view.is-readable-line-width .markdown-preview-sizer,
+.wide-page .markdown-source-view.is-readable-line-width .cm-sizer,
+.wide-page .markdown-source-view.is-readable-line-width .cm-content {
+  max-width: 95% !important;
+  width: 95% !important;
+}
+
+/* Adjust margins if necessary */
+.wide-page .markdown-preview-sizer,
+.wide-page .markdown-source-view .cm-sizer {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
