@@ -34,6 +34,7 @@ views:
       - formula.任务进度
       - formula.资金数量
       - formula.官网
+      - navigation
     viewMode: review
     taskContent: file.basename
     taskStatus: note.status
@@ -50,7 +51,6 @@ views:
     name: 详细列表
     order:
       - formula.进度
-    columns:
       - file.name
       - project
       - long_name
@@ -60,10 +60,14 @@ views:
       - end
       - related
       - duty
+      - navigation
       - formula.资金数量
       - formula.官网
     columnSize:
-      note.status: 237
+      formula.进度: 136
+      file.name: 125
+      note.status: 93
+      note.related: 232
   - type: cards
     name: 进行中
     filters:

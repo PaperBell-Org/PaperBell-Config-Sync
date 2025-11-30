@@ -1,7 +1,7 @@
 {
   "changelog": {
     "enabled": true,
-    "lastVersion": "9.12.1"
+    "lastVersion": "9.12.2"
   },
   "progressBarDisplayMode": "both",
   "supportHoverToShowProgressInfo": true,
@@ -299,7 +299,7 @@
     "pathMappings": [],
     "metadataConfig": {
       "metadataKey": "project",
-      "enabled": true,
+      "enabled": false,
       "detectionMethods": []
     },
     "configFile": {
@@ -2385,74 +2385,32 @@
       "ws_1764410067355_a3rl1g5fn": {
         "id": "ws_1764410067355_a3rl1g5fn",
         "name": "Default",
-        "updatedAt": 1764504885471,
+        "updatedAt": 1764531665858,
         "settings": {
           "fluentFilterState": {
             "projects": {
               "filters": {},
-              "selectedProject": "source",
               "advancedFilter": {
                 "rootCondition": "all",
-                "filterGroups": [
-                  {
-                    "id": "fluent-proj-group-1764504823192",
-                    "groupCondition": "all",
-                    "filters": [
-                      {
-                        "id": "fluent-proj-filter-1764504823192",
-                        "property": "project",
-                        "condition": "is",
-                        "value": "source"
-                      }
-                    ]
-                  }
-                ]
+                "filterGroups": []
               },
-              "viewMode": "kanban"
+              "viewMode": "tree"
             },
             "upcoming": {
               "filters": {},
-              "selectedProject": "ABSESpy",
               "advancedFilter": {
                 "rootCondition": "all",
-                "filterGroups": [
-                  {
-                    "id": "fluent-proj-group-1764432092365",
-                    "groupCondition": "all",
-                    "filters": [
-                      {
-                        "id": "fluent-proj-filter-1764432092365",
-                        "property": "project",
-                        "condition": "is",
-                        "value": "ABSESpy"
-                      }
-                    ]
-                  }
-                ]
+                "filterGroups": []
               },
               "viewMode": "list"
             },
             "inbox": {
               "filters": {},
-              "selectedProject": "MYPAPER",
               "advancedFilter": {
                 "rootCondition": "all",
-                "filterGroups": [
-                  {
-                    "id": "fluent-proj-group-1764490389307",
-                    "groupCondition": "all",
-                    "filters": [
-                      {
-                        "id": "fluent-proj-filter-1764490389307",
-                        "property": "project",
-                        "condition": "is",
-                        "value": "MYPAPER"
-                      }
-                    ]
-                  }
-                ]
+                "filterGroups": []
               },
-              "viewMode": "list"
+              "viewMode": "kanban"
             },
             "today": {
               "filters": {},
@@ -2461,11 +2419,11 @@
                 "rootCondition": "all",
                 "filterGroups": [
                   {
-                    "id": "fluent-proj-group-1764490389307",
+                    "id": "fluent-proj-group-1764510285773",
                     "groupCondition": "all",
                     "filters": [
                       {
-                        "id": "fluent-proj-filter-1764490389307",
+                        "id": "fluent-proj-filter-1764510285773",
                         "property": "project",
                         "condition": "is",
                         "value": "MYPAPER"
@@ -2478,23 +2436,9 @@
             },
             "flagged": {
               "filters": {},
-              "selectedProject": "MYPAPER",
               "advancedFilter": {
                 "rootCondition": "all",
-                "filterGroups": [
-                  {
-                    "id": "fluent-proj-group-1764490389307",
-                    "groupCondition": "all",
-                    "filters": [
-                      {
-                        "id": "fluent-proj-filter-1764490389307",
-                        "property": "project",
-                        "condition": "is",
-                        "value": "MYPAPER"
-                      }
-                    ]
-                  }
-                ]
+                "filterGroups": []
               },
               "viewMode": "list"
             },
@@ -2518,25 +2462,20 @@
               "filters": {},
               "advancedFilter": {
                 "rootCondition": "all",
-                "filterGroups": [
-                  {
-                    "id": "fluent-proj-group-1764504813628",
-                    "groupCondition": "all",
-                    "filters": [
-                      {
-                        "id": "fluent-proj-filter-1764504813628",
-                        "property": "project",
-                        "condition": "is",
-                        "value": "source"
-                      }
-                    ]
-                  }
-                ]
+                "filterGroups": []
+              },
+              "viewMode": "list"
+            },
+            "tags": {
+              "filters": {},
+              "advancedFilter": {
+                "rootCondition": "all",
+                "filterGroups": []
               },
               "viewMode": "list"
             }
           },
-          "fluentActiveViewId": "projects"
+          "fluentActiveViewId": "inbox"
         }
       }
     }
