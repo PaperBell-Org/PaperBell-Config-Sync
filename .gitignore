@@ -3,12 +3,19 @@
 
 # 其他不需要版本控制的文件夹
 00 - 每日日记/
-Cards/**/*
-Inputs/**/*
-Outputs/**/*
-Projects/**/*
-Locations/**/*
-Persons/**/*
+
+# 忽略文件夹下的所有内容，但允许 Git 检查文件夹本身
+Cards/*
+Inputs/*
+Outputs/*
+Projects/*
+Locations/*
+Persons/*
+
+# 恢复对特定文件的跟踪（Git 需要文件夹未被完全忽略才能生效）
+!**/00*.md
+!**/00*.base
+!**/Index.md
 
 # 专门不用的文件
 .obsidian/workspace
@@ -24,10 +31,6 @@ longform-sessions.json
 .obsidian/hotkeys.json
 # 类别
 .obsidian/types.json
-
-# 只保留需要共享的文件夹
-!**/00*.md
-!**/00*.base
 
 # 更新备份
 .update_backup
