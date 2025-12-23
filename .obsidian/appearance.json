@@ -21,14 +21,15 @@
     "【主页设置】homepage setting",
     "【卡片框】callout",
     "【卡片表】card-list",
-    "【缩短链接】shortten-url",
     "【字体】stylesheet",
     "【AnuPpuccin】扩展颜色方案",
     "【AnuPpuccin】extended-colorschemes",
     "【AnuPpuccin】floating-search-bar",
     "【AnuPpuccin】its-frontmatter",
     "【AnuPpuccin】minimal-cards",
-    "【AnuPpuccin】notion-cards"
+    "【AnuPpuccin】notion-cards",
+    "【页面宽度】wide-page",
+    "【元数据优化】longform-props"
   ],
   "cssTheme": "AnuPpuccin",
   "theme": "system",
