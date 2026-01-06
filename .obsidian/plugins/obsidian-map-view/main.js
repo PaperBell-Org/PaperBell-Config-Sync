@@ -29853,9 +29853,9 @@ var css_248z$b = "/*!\n * leaflet-extra-markers\n * Custom Markers for Leaflet J
 styleInject(css_248z$b);
 
 // The pound sign is optional here
-const TAG_NAME_WITH_HEADER = /tag:(#?[\p{L}\p{N}_\/\-]*)/gu;
+const TAG_NAME_WITH_HEADER = /tag:(#?[\p{L}\p{N}\p{Extended_Pictographic}\p{So}_\/\-]*)/gu;
 // Same as above, but also supporting wildcards for query purposes (not used for inline tags)
-const TAG_NAME_WITH_HEADER_AND_WILDCARD = /tag:(#?[\p{L}\p{N}_\/\-\*]*)/gu;
+const TAG_NAME_WITH_HEADER_AND_WILDCARD = /tag:(#?[\p{L}\p{N}\p{Extended_Pictographic}\p{So}_\/\-\*]*)/gu;
 // Note no '#' sign
 const INLINE_TAG_IN_NOTE = /tag:(?<tag>[\p{L}\p{N}_\/\-]+)/gu;
 // path:"..."
@@ -60035,7 +60035,7 @@ class QuerySuggest extends obsidian.PopoverSuggest {
                     cursorOffset: -1,
                 },
                 {
-                    text: '[property:value]',
+                    text: '["property":"value"]',
                     textToInsert: '[:]',
                     cursorOffset: -2,
                 },
@@ -73777,7 +73777,7 @@ class TimeSeriesScale extends TimeScale {
     }
 }
 
-var css_248z$3 = "\n    .mv-marker-popup-internal.svelte-ixci7t {\n        display: flex;\n        flex-direction: column;\n        position: relative;\n        margin: 5px;\n        gap: 8px;\n    }\n\n    .with-content.svelte-ixci7t {\n        height: 300px;\n    }\n\n    .top-row.svelte-ixci7t {\n        display: flex;\n        align-items: flex-start;\n        gap: 8px;\n        width: 100%;\n        flex: 0 0 auto;\n    }\n\n    .headlines.svelte-ixci7t {\n        flex: 1;\n        min-width: 0;\n    }\n\n    .markdown-embed.svelte-ixci7t {\n        width: 100%;\n        flex: 1 1 auto;\n        overflow-y: auto;\n        padding: 5px;\n    }\n\n    .markdown-embed-content p {\n        margin: 0;\n    }\n\n    .elevation-graph-container.svelte-ixci7t {\n        width: 100%;\n        height: 200px;\n        padding-top: 10px;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .elevation.svelte-ixci7t {\n        width: 100%;\n        padding: 5px;\n    }\n\n    .map-view-marker-name.svelte-ixci7t {\n        color: var(--text-normal);\n        font-size: var(--font-text-size);\n        font-family: var(--font-text);\n        font-weight: bold;\n        margin: 0;\n        line-height: 1.3;\n        max-height: calc(1.3em * 3);\n        overflow: hidden;\n    }\n\n    .map-view-marker-sub-name.svelte-ixci7t {\n        color: var(--text-normal);\n        font-size: var(--font-text-size);\n        font-family: var(--font-text);\n        margin: 4px 0 0 0;\n        overflow: hidden;\n        text-overflow: ellipsis;\n        white-space: nowrap;\n    }\n\n    .top-right-controls.svelte-ixci7t {\n        flex-shrink: 0;\n        display: flex;\n        gap: 4px;\n    }\n\n    .button.svelte-ixci7t {\n        opacity: 0.8;\n        color: var(--text-muted);\n    }\n\n    .clickable.svelte-ixci7t {\n        cursor: pointer;\n    }\n\n    .button.svelte-ixci7t:hover {\n        opacity: 1;\n    }\n";
+var css_248z$3 = "\n    .mv-marker-popup-internal.svelte-1rxzaeb {\n        display: flex;\n        flex-direction: column;\n        position: relative;\n        margin: 5px;\n        gap: 8px;\n    }\n\n    .with-content.svelte-1rxzaeb {\n        height: 300px;\n    }\n\n    .top-row.svelte-1rxzaeb {\n        display: flex;\n        align-items: flex-start;\n        gap: 8px;\n        width: 100%;\n        flex: 0 0 auto;\n    }\n\n    .headlines.svelte-1rxzaeb {\n        flex: 1;\n        min-width: 0;\n    }\n\n    .markdown-embed.svelte-1rxzaeb {\n        width: 100%;\n        flex: 1 1 auto;\n        overflow-y: auto;\n        padding: 5px;\n    }\n\n    .elevation-graph-container.svelte-1rxzaeb {\n        width: 100%;\n        height: 200px;\n        padding-top: 10px;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n    }\n\n    .elevation.svelte-1rxzaeb {\n        width: 100%;\n        padding: 5px;\n    }\n\n    .map-view-marker-name.svelte-1rxzaeb {\n        color: var(--text-normal);\n        font-size: var(--font-text-size);\n        font-family: var(--font-text);\n        font-weight: bold;\n        margin: 0;\n        line-height: 1.3;\n        max-height: calc(1.3em * 3);\n        overflow: hidden;\n    }\n\n    .map-view-marker-sub-name.svelte-1rxzaeb {\n        color: var(--text-normal);\n        font-size: var(--font-text-size);\n        font-family: var(--font-text);\n        margin: 4px 0 0 0;\n        overflow: hidden;\n        text-overflow: ellipsis;\n        white-space: nowrap;\n    }\n\n    .top-right-controls.svelte-1rxzaeb {\n        flex-shrink: 0;\n        display: flex;\n        gap: 4px;\n    }\n\n    .button.svelte-1rxzaeb {\n        opacity: 0.8;\n        color: var(--text-muted);\n    }\n\n    .clickable.svelte-1rxzaeb {\n        cursor: pointer;\n    }\n\n    .button.svelte-1rxzaeb:hover {\n        opacity: 1;\n    }\n";
 styleInject(css_248z$3);
 
 function openMenu(ev, $$props) {
@@ -73802,12 +73802,12 @@ function openNote(ev, $$props) {
 	$$props.view.goToMarker($$props.layer, mouseEventToOpenMode($$props.settings, ev, 'openNote'), true);
 }
 
-var root_1$3 = from_html(`<p class="map-view-marker-sub-name svelte-ixci7t"> </p>`);
-var root_2$3 = from_html(`<div class="markdown-embed markdown-embed-content markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists svelte-ixci7t"></div>`);
+var root_1$3 = from_html(`<p class="map-view-marker-sub-name svelte-1rxzaeb"> </p>`);
+var root_2$3 = from_html(`<div class="markdown-embed markdown-embed-content markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists svelte-1rxzaeb"></div>`);
 var root_5$1 = from_html(`<br/> <!> <!> <!>`, 1);
 var root_4$2 = from_html(` <br/> <!>`, 1);
-var root_3$1 = from_html(`<div class="elevation svelte-ixci7t"><!> <div class="elevation-graph-container svelte-ixci7t"><canvas class="elevationGraph"></canvas></div></div>`);
-var root$3 = from_html(`<div><div class="top-row svelte-ixci7t"><div class="headlines clickable svelte-ixci7t"><p class="map-view-marker-name svelte-ixci7t"> </p> <!></div> <div class="top-right-controls svelte-ixci7t"><div class="button clickable svelte-ixci7t"><!></div> <div class="button clickable svelte-ixci7t"><!></div> <div class="button clickable svelte-ixci7t"><!></div></div></div> <!> <!></div>`);
+var root_3$1 = from_html(`<div class="elevation svelte-1rxzaeb"><!> <div class="elevation-graph-container svelte-1rxzaeb"><canvas class="elevationGraph"></canvas></div></div>`);
+var root$3 = from_html(`<div><div class="top-row svelte-1rxzaeb"><div class="headlines clickable svelte-1rxzaeb"><p class="map-view-marker-name svelte-1rxzaeb"> </p> <!></div> <div class="top-right-controls svelte-1rxzaeb"><div class="button clickable svelte-1rxzaeb"><!></div> <div class="button clickable svelte-1rxzaeb"><!></div> <div class="button clickable svelte-1rxzaeb"><!></div></div></div> <!> <!></div>`);
 
 function MarkerPopup($$anchor, $$props) {
 	push($$props, true);
@@ -74170,7 +74170,7 @@ function MarkerPopup($$anchor, $$props) {
 
 	template_effect(
 		($0) => {
-			classes = set_class(div, 1, 'mv-marker-popup-internal svelte-ixci7t', null, classes, $0);
+			classes = set_class(div, 1, 'mv-marker-popup-internal svelte-1rxzaeb', null, classes, $0);
 			set_text(text$1, get$1(header));
 		},
 		[
@@ -75956,7 +75956,7 @@ function convertLegacyMarkerIcons(settings) {
             };
             settings.markerIconRules.push(newRule);
         }
-        settings.markerIcons = null;
+        delete settings.markerIcons;
         return true;
     }
     return false;
@@ -76074,7 +76074,7 @@ function convertLegacyGooglePlaces(settings) {
 }
 function convertMarkerIconRulesToDisplayRules(settings) {
     let changed = false;
-    if (settings.markerIconRules) {
+    if (settings.markerIconRules && settings.markerIconRules.length > 0) {
         // Make sure not to add to any defaults
         settings.displayRules = [];
         for (const rule of settings.markerIconRules) {
@@ -79690,6 +79690,5 @@ class MapViewPlugin extends obsidian.Plugin {
 }
 
 module.exports = MapViewPlugin;
-
 
 /* nosourcemap */
